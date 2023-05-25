@@ -1,4 +1,5 @@
 import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainDisplay from "./components/MainDisplay";
 import HomePage from "./Dashboard/HomePage";
@@ -16,11 +17,14 @@ import RabbitMQ from "./Dashboard/dataaquisation/RabbitMQ";
 import Proficy from "./Dashboard/dataaquisation/Proficy";
 import FileShare from "./Dashboard/dataaquisation/FileShare";
 import Email from "./Dashboard/dataaquisation/Email";
+import ProductionPage from "./components/production/ProductionPage";
+import Charts from "./components/production/Charts";
+import Char from "./components/production/Char";
 function App() {
   return (
     <>
       <div className="App">
-        <MainDisplay />
+        <Char />
       </div>
       {/* <RabbitMQ /> */}
       {/* <BrowserRouter>
